@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//namespace SquareCS.src
-//{
+//create a class and remove the namespace declaration since we plan to use this as a object and not a util file
 class Square
 {
-
+    //prevent non class methods from accessing this varible for instance SquareObj.size = 5 will not work when privated
     private int size;
 
    
@@ -38,6 +37,7 @@ class Square
         Console.WriteLine(data);
     }
 
+    //a simple staircase drawing method props to Lua in computercraft for showing me the idea
     public static void DrawStairs(int data)
     {
         for (int i = 0; i < 10; i++) {
@@ -49,5 +49,4 @@ class Square
         }
 
     }
-    }
-//}
+}
